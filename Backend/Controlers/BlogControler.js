@@ -35,7 +35,7 @@ const GetBlog = async (req, res) => {
   if (!singleBlog) {
     res.status(404);
     throw new Error("Blog not found !");
-  }
+  };
   res.status(200).json(singleBlog);
 };
 
